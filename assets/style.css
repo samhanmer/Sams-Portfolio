@@ -1,44 +1,4 @@
-body {
-    background-image:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url(./img/Starsbackground.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.intro {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-top: 15%;
-    flex-direction: column;
-    
-}
-
-.intro h1 {
-    border-top: 1px solid #bbbbbb;
-    border-bottom: 1px solid #bbbbbb;
-    border-left: none;
-    border-right: none;
-}
-
-.intro  p {
-    font-size: 18px;
-    margin-top: -1%;
-}
-
-ul li:last-child {
-  border-right: none;
-}
+/* Nav bar */
 
 nav ul {
     align-items: center;
@@ -50,7 +10,7 @@ nav ul {
 }
 
 nav ul li {
-    border-right: 1px solid #bbbbbb;
+    border-right: 1px solid rgb(5, 125, 194);
     padding: 0 15px;
 }
 
@@ -60,23 +20,48 @@ nav ul li a {
     text-decoration: none;
 }
 
-footer {
-    text-align: center;
-    margin-top: auto;
-    padding: 0;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-}
-footer p a {
-    padding: 0 15px;
-    color: white;
-    text-decoration: none;
+ul li:last-child {
+  border-right: none;
 }
 
-footer #github {
-    border-right: solid white 1px;
+/* Content on all webpages */
+
+body {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(./img/Starsbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    min-height: 100vh;
+    width: 99%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 15%;
+    flex-direction: column;
+}
+
+.intro h1 {
+    border-top: 1px solid #bbbbbb;
+    border-bottom: 1px solid #bbbbbb;
+    border-left: none;
+    border-right: none;
+    font-size: 38px;
+    color: rgb(5, 125, 194);
+}
+
+.intro  p {
+    font-size: 20px;
+    margin-top: -1%;
 }
 
 .about {
@@ -85,31 +70,26 @@ footer #github {
     display: flex;
     flex-direction: column;
 }
+
 .about h1 {
-    border-bottom: white solid 1px;
+    border-bottom: rgb(5, 125, 194) solid 1px;
     padding: 20px;
+    color:rgb(5, 125, 194);
+    font-size: 40px;
 }
+
 .about p {
     margin-left: 50px;
     margin-right: 50px;
     text-indent: 2em;
-}
-form {
-  max-width: 300px;            
-  margin: 40px auto;           
-  padding: 20px;
-  border: 1px ridge rgb(255, 255, 255);
-  border-radius: 8px;
-}
-label {
-  display: block;
-  margin-top: 10px;
-  color: white;
+    font-size: 20px;
+    max-width: 50%;
 }
 
-input[type="submit"] {
-    cursor: pointer;
-    padding: 5px 10px;
+.img {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 table.education {
@@ -117,7 +97,7 @@ table.education {
     max-width: 800px;                 
     border-collapse: collapse;    
     font-size: 18px;
-    border: 1px solid white;
+    border: 1px solid rgb(5, 125, 194);
     justify-content: center;
     margin: 20px auto;
     align-items: center;
@@ -136,4 +116,48 @@ table.education td {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    border: solid 1px rgb(5, 125, 194);
+    margin: 5px;
+}
+
+/* Form */
+
+form {
+  max-width: 300px;            
+  margin: 40px auto;           
+  padding: 20px;
+  border: 1px ridge rgb(5, 125, 194);
+  border-radius: 8px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  color: white;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+footer p a {
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+footer #github {
+    border-right: solid rgb(5, 125, 194) 1px;
 }
