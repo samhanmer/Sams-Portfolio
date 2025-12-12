@@ -16,4 +16,4 @@ Contact is a small form to fill out if you're interested in reaching out!
 
 # Live website
 
-https://samhanmer.github.io/Sams-Portfolio/index.html
+https://samhanmer.github.io/Sams-Portfolio/index.html 
